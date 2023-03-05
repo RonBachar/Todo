@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bootstrap Todo App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link rel="stylesheet" href="css/app.css">
+  </head>
+  <body>
+    <div class="container mt-5">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <h2 class="text-center mb-3">Bootstrap Todo App</h2>
+
+          <form>
+            <div class="form-group">
+              <label for="todo-input">New Todo</label>
+              <input type="text" class="form-control" id="todo-input" />
+            </div>
+            <div class="form-group">
+              <label for="importance-select">Importance</label>
+              <select class="form-control" id="importance-select">
+                <option value="1">Low</option>
+                <option value="2">Medium</option>
+                <option value="3">High</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-primary btn-block">
+              Add Todo
+            </button>
+          </form>
+
+          <ul class="list-group mt-3">
+            <li
+              class="list-group-item d-flex justify-content-between align-items-center"
+            >
+              Example Todo
+              <div>
+                <button type="button" class="btn btn-success btn-sm mr-2">
+                  <i class="fa fa-check"></i>
+                </button>
+                <button type="button" class="btn btn-danger btn-sm">
+                  <i class="fa fa-times"></i>
+                </button>
+              </div>
+            </li>
+          </ul>
+
+          <div class="mt-3">
+            <div class="btn-group" role="group">
+              <button
+                type="button"
+                class="btn btn-secondary active"
+                id="all-todos-btn"
+              >
+                All
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="active-todos-btn"
+              >
+                Active
+              </button>
+              <button
+                type="button"
+                class="btn btn-secondary"
+                id="done-todos-btn"
+              >
+                Done
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
